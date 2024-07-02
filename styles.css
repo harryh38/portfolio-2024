@@ -5,10 +5,66 @@ body {
   text-align: center;
   background-color: #f4f4f4;
 }
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
 header {
-  background-color: #333;
-  color: #fff;
   padding: 1rem 0;
+  text-align: center;
+}
+
+.reggae-one-regular {
+  font-family: "Reggae One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header h1 {
+  color: rgb(39, 253, 245);
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: 0px 0px 5px rgba(39, 253, 245, 0.7),
+    0px 0px 10px rgba(39, 253, 245, 0.5);
+  -webkit-font-smoothing: antialiased; /* Webkit-based browsers (e.g., Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale; /* Firefox on Mac */
+}
+
+header .fsd {
+  color: rgb(255, 61, 170);
+  text-shadow: 0px 0px 5px rgba(255, 61, 170, 0.7),
+    0px 0px 10px rgba(255, 61, 170, 0.5);
+  -webkit-font-smoothing: antialiased; /* Webkit-based browsers (e.g., Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale; /* Firefox on Mac */
+}
+
+.blinking {
+  animation: blink 3s step-start infinite;
+}
+
+.blinking {
+  animation: blink 3s step-start infinite;
 }
 #projects {
   margin: 2rem;
@@ -23,14 +79,11 @@ header {
   padding: 1rem;
 }
 
-.navbar .logo {
-  color: #fff;
-  font-size: 1.5rem;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -47,6 +100,21 @@ header {
   color: #d8cefe;
 }
 
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #ff0090; /* Adjust icon color as needed */
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: #00ffee; /* Adjust hover color as needed */
+}
 /* About Section */
 #about {
   display: flex;
@@ -147,11 +215,22 @@ header {
   padding: 50px 0;
 }
 
-.neon-text {
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.reggae-one-regular {
   font-size: 3rem;
   color: #ff00ff;
-  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff,
+  text-shadow: 0 0 0px #ff00ff, 0 0 0px #ff00ff, 0 0 15px #ff00ff,
     0 0 20px #ff00ff;
+  animation: blink 3s infinite;
 }
 
 .contact-form {
