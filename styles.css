@@ -3,7 +3,11 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #f4f4f4;
+  background-image: url("images/neon.jpg");
+  background-size: cover; /* Ensures the background covers the whole screen */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-attachment: fixed;
 }
 @keyframes blink {
   0%,
@@ -115,7 +119,9 @@ header .fsd {
 .social-icons a:hover {
   color: #00ffee; /* Adjust hover color as needed */
 }
+
 /* About Section */
+
 #about {
   display: flex;
   justify-content: center;
@@ -147,6 +153,7 @@ header .fsd {
   flex: 1;
   text-align: left;
   padding: 20px;
+  color: white;
 }
 
 .content h1 {
