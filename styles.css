@@ -146,7 +146,7 @@ header .fsd {
   border: 5px solid #00ffff;
   border-radius: 10px;
   width: 100%;
-  max-width: 400px;
+  max-width: 294px;
 }
 
 .content {
@@ -237,7 +237,7 @@ header .fsd {
   color: #ff00ff;
   text-shadow: 0 0 0px #ff00ff, 0 0 0px #ff00ff, 0 0 15px #ff00ff,
     0 0 20px #ff00ff;
-  animation: blink 3s infinite;
+  /*animation: blink 3s infinite;*/
 }
 
 .contact-form {
