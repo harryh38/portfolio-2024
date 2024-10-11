@@ -33,6 +33,62 @@ body {
   }
 }
 
+/* Nav Section */
+.navbar {
+  display: flex;
+  font-family: "Staatliches", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  border-bottom: 2px solid rgb(39, 253, 245);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 10px; /* Reduce margin to bring items closer together */
+}
+
+.nav-links li:last-child {
+  margin-right: 0; /* Remove the margin from the last item */
+}
+
+.nav-links li a {
+  font-family: "Staatliches", sans-serif;
+  font-size: 2rem; /* Increase font size */
+  font-weight: 700; /* Make it bold to match the look */
+  color: #00ffff; /* Bright cyan color */
+  text-transform: uppercase;
+  letter-spacing: 0.05rem; /* Reduce letter spacing */
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #00d7d7; /* Slightly change the hover color */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #ff0090; /* Adjust icon color as needed */
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: #00ffee; /* Adjust hover color as needed */
+}
+
 /* Header Section */
 header {
   padding: 1rem 0;
@@ -47,17 +103,6 @@ header {
 
 header h1 {
   color: rgb(39, 253, 245);
-  margin-bottom: 0.5rem;
-  font-size: 5rem;
-  font-weight: 400;
-  text-shadow: 0px 0px 5px rgba(39, 253, 245, 0.7),
-    0px 0px 10px rgba(39, 253, 245, 0.5);
-  -webkit-font-smoothing: antialiased; /* Webkit-based browsers (e.g., Chrome, Safari) */
-  -moz-osx-font-smoothing: grayscale; /* Firefox on Mac */
-}
-
-.first-h1 {
-  color: rgb(255, 61, 170);
   margin-bottom: 0.5rem;
   font-size: 5rem;
   font-weight: 400;
@@ -92,56 +137,6 @@ header .fsd {
 
 #projects {
   margin: 2rem;
-}
-
-/* Nav Section */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 1rem;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin-right: 20px; /* Adds space between the list items */
-}
-
-.nav-links li a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.5rem; /* Adjust the size to fit */
-  font-weight: bold;
-  color: #00ffff; /* Bright cyan color */
-  text-transform: uppercase;
-  letter-spacing: 0.1rem; /* Adjust spacing if needed */
-  text-decoration: none;
-}
-
-.nav-links li a:hover {
-  color: #00d7d7; /* Optional: slightly change the hover color */
-}
-
-.social-icons {
-  display: flex;
-  align-items: center;
-}
-
-.social-icons a {
-  color: #ff0090; /* Adjust icon color as needed */
-  text-decoration: none;
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
-}
-
-.social-icons a:hover {
-  color: #00ffee; /* Adjust hover color as needed */
 }
 
 /* About Section */
