@@ -42,6 +42,7 @@ body {
   background-color: #333;
   padding: 1rem;
   border-bottom: 2px solid rgb(39, 253, 245);
+  line-height: 0.6;
 }
 
 .nav-links {
@@ -75,14 +76,30 @@ body {
 
 .social-icons {
   display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Styling for each icon and label container */
+.icon-label {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
+/* Styling for the icon links */
 .social-icons a {
   color: #ff0090; /* Adjust icon color as needed */
   text-decoration: none;
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Styling for the text labels */
+.icon-label span {
+  margin-top: 0.5rem;
+  color: #00ffff; /* Adjust text color */
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .social-icons a:hover {
