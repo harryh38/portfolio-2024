@@ -96,7 +96,8 @@ header {
 }
 
 .reggae-one-regular {
-  font-family: "Reggae One", system-ui;
+  /* font-family: "Reggae One", system-ui; */
+  font-family: "Neon Future", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -112,6 +113,7 @@ header h1 {
   -moz-osx-font-smoothing: grayscale; /* Firefox on Mac */
 }
 
+/* Specific styling for the Full Stack Developer header */
 header .fsd {
   color: rgb(255, 61, 170);
   text-shadow: 0px 0px 5px rgba(255, 61, 170, 0.7),
@@ -120,17 +122,31 @@ header .fsd {
   -moz-osx-font-smoothing: grayscale; /* Firefox on Mac */
 }
 
+/* Animation for blinking effect */
 .blinking {
-  animation: blink 5s step-start infinite;
+  animation: flicker 9s infinite alternate;
 }
 
 .blinking-2 {
-  animation: blink 6s step-start infinite;
+  animation: flicker 8s infinite alternate;
   animation-delay: 1s;
 }
 
-@keyframes blink {
-  50% {
+/* Keyframes for realistic flicker/blink effect */
+@keyframes flicker {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    opacity: 1;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     opacity: 0;
   }
 }
